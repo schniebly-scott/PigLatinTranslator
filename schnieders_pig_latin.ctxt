@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=schnieders_pig_latin
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=s
+comment2.target=void\ builder(java.util.Scanner)
+comment3.params=word\ pos
+comment3.target=void\ pigWord(java.lang.String,\ int)
+numComments=4
