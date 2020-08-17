@@ -5,16 +5,17 @@ public class schnieders_pig_latin
     public static void main(String args[])
     {
         Scanner s = new Scanner(System.in);
+        int choice = 0;
+        while(true) {
         builder(s);
         System.out.println("\nWould you like to enter a new sentence? (1=yes or 2=no)");
-        int choice=s.nextInt();
+        choice=s.nextInt();
         s.nextLine();
-        if(choice==1)
-            builder(s);
-        else if(choice==2)
+        if(choice==2)
             System.exit(0);
-        else
+        else if(choice!=1)
             System.out.print("Not a choice");
+        }
     }
     public static void builder(Scanner s) 
     {
@@ -26,7 +27,7 @@ public class schnieders_pig_latin
         char temp1;
         lastSpace = 0;
         word = 0;
-        System.out.print("Enter a sentence to translate into pig latin:  ");
+        System.out.print("\nEnter a sentence to translate into pig latin:  ");
         sentence = s.nextLine();
         for (int x=0; x<sentence.length(); x++)
         {
